@@ -1,16 +1,57 @@
-header {
-    background-color: #80F0E0;
-    color: #001F3F;
-}
 body {
     background-color: #80F0E0;
     font-family: Arial, sans-serif;
     color: #001F3F;
 }
 
-h1{
-    text-align: center;
+header {
+    padding: 20px;
+    
+    /* On utilise Flexbox pour aligner les éléments côte à côte */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;     /* Centre verticalement */
+    gap: 20px;               /* Espace entre le titre et le bouton */
+    flex-wrap: wrap;         /* Permet de passer à la ligne sur petit écran */
+}
+
+h1 {
+    margin: 0; /* Important pour un bon alignement avec flexbox */
 }
 
 
+.bouton {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Couleurs */
+    background-color: #001F3F;
+    color: #80F0E0;
+
+    /* Effet 3D */
+    border: none;
+    border-radius: 8px;
+    border-bottom: 3px solid #001429;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    /* Transition pour des animations fluides */
+    transition: all 0.15s ease-out;
+}
+
+.bouton:hover {
+    background-color: #003366;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bouton:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #001429;
+}
 
