@@ -2,6 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>page html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Robin Boisseau</title>
+    <!-- On lie notre unique feuille de style -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<h1>Oui</h1>
+<body>
+
+    <header>
+        <div class="profile-info">
+            <img src="images/profile.png" alt="Photo de profil de Robin Boisseau" class="profile-photo">
+            <h1>Robin Boisseau</h1>
+        </div>
+        <!-- Ce bouton a un ID pour que JavaScript puisse le trouver facilement -->
+        <button id="theme-toggle-btn" class="bouton">Changer le thème</button>
+    </header>
+
+    <main>
+        <h2>Mes Projets</h2>
+        <p>Bientôt ici, la liste de mes réalisations...</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <!-- TRES IMPORTANT: On lie le fichier JavaScript juste avant la fin du body -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* --- STYLES DE BASE ET STRUCTURE --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* On ajoute une transition pour que le changement de couleur soit fluide */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-photo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+    transition: border-color 0.3s ease;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 70vh;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bouton {
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease-out;
+}
+
+.bouton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bouton:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- THÈME CLAIR (PAR DÉFAUT) --- */
+body {
+    background-color: #80F0E0;
+    color: #001F3F;
+}
+
+.profile-photo {
+    border-color: #001F3F;
+}
+
+footer {
+    background-color: #001F3F;
+    color: #80F0E0;
+}
+
+.bouton {
+    background-color: #001F3F;
+    color: #80F0E0;
+    border-bottom: 3px solid #001429;
+}
+
+.bouton:hover {
+    background-color: #003366;
+    color: #FFFFFF;
+}
+
+
+/* --- THÈME FONCÉ (QUAND LE BODY A LA CLASSE .dark-theme) --- */
+body.dark-theme {
+    background-color: #001F3F;
+    color: #80F0E0;
+}
+
+body.dark-theme .profile-photo {
+    border-color: #80F0E0;
+}
+
+body.dark-theme footer {
+    background-color: #80F0E0;
+    color: #001F3F;
+}
+
+body.dark-theme .bouton {
+    background-color: #80F0E0;
+    color: #001F3F;
+    border-bottom: 3px solid #61bdb1;
+}
+
+body.dark-theme .bouton:hover {
+    background-color: #a2f2e7;
+    color: #000000;
+}
