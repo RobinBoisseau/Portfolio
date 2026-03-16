@@ -19,6 +19,12 @@ header {
     gap: 15px;
 }
 
+/* NOUVEAU : Le conteneur pour les boutons */
+.header-buttons {
+    display: flex;
+    gap: 15px; /* Contrôle l'espace entre les deux boutons */
+}
+
 .profile-photo {
     height: 60px;
     width: 60px;
