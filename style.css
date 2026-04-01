@@ -120,3 +120,76 @@ body.dark-theme .bouton:hover {
     background-color: #a2f2e7;
     color: #000000;
 }
+
+/* --- SECTION CONTACTS --- */
+
+/* Conteneur de toutes les cartes */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* La carte individuelle */
+.contact-card {
+    display: flex;
+    align-items: center; /* Aligne verticalement l'icône et le texte */
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    min-width: 250px;
+    transition: background-color 0.3s, transform 0.2s;
+    
+    /* Couleurs par défaut (Thème clair) */
+    background-color: rgba(0, 31, 63, 0.05); /* Un fond très léger */
+    color: #001F3F;
+}
+
+/* Taille de l'icône */
+.contact-card .icon {
+    width: 30px;  /* Ajustez la taille ici */
+    height: 30px;
+    margin-right: 15px; /* Espace entre l'icône et le texte */
+    display: flex;
+    align-items: center;
+}
+
+/* Forcer le SVG à remplir son conteneur .icon */
+.contact-card .icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor; /* L'icône prendra la couleur du texte */
+}
+
+/* Structure du texte à côté */
+.contact-card .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact-card .sub {
+    font-size: 0.85rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+/* Effet au survol */
+.contact-card:hover {
+    transform: translateY(-3px);
+    background-color: rgba(0, 31, 63, 0.1);
+}
+
+/* --- ADAPTATION AU THÈME SOMBRE --- */
+
+body.dark-theme .contact-card {
+    background-color: rgba(128, 240, 224, 0.1);
+    color: #80F0E0;
+}
+
+body.dark-theme .contact-card:hover {
+    background-color: rgba(128, 240, 224, 0.2);
+}
